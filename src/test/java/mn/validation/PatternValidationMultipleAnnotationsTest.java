@@ -17,6 +17,6 @@ class PatternValidationMultipleAnnotationsTest {
   void testValid() {
     Set<ConstraintViolation<PatternValidationMultipleAnnotations>> violations = validator
         .validate(new PatternValidationMultipleAnnotations("anything"));
-    Assertions.assertEquals(0, violations.size());
+    Assertions.assertEquals(1, violations.size());
   }
 }
